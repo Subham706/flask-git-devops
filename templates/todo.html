@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@"
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,5 +7,17 @@
 </head>
 <body>
     <h1>To-Do Portal</h1>
+    <form action="/submittodoitem" method="POST">
+        <div>
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName" required>
+        </div>
+        <div>
+            <label for="itemDescription">Item Description:</label>
+            <textarea id="itemDescription" name="itemDescription" required></textarea>
+        </div>
+        <button type="submit">Submit Item</button>
+    </form>
 </body>
 </html>
+"@ | Out-File -FilePath templates\todo.html -Encoding utf8
