@@ -1,5 +1,6 @@
 ﻿{
   "status": "success",
-  "version": "1.0",
-  "message": "Initial API response"
+  "version": "2.0-new",
+  "message": "API response updated from Subham706_new branch",
+  "endpoints": ["/api", "/submittodoitem"]
 }
