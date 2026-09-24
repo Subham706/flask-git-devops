@@ -16,8 +16,11 @@
             <label for="itemDescription">Item Description:</label>
             <textarea id="itemDescription" name="itemDescription" required></textarea>
         </div>
+        <div>
+            <label for="itemId">Item ID:</label>
+            <input type="text" id="itemId" name="itemId">
+        </div>
         <button type="submit">Submit Item</button>
     </form>
 </body>
 </html>
-"@ | Out-File -FilePath templates\todo.html -Encoding utf8
